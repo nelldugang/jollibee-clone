@@ -1,0 +1,16 @@
+.container {
+  display: grid;
+  gap: 20px; /* Optional: Adds space between columns */
+  width: min(95%, 1600px);
+  margin: auto;
+  height: 100vh;
+  gap: 1.5rem;
+  margin-top: 20px;
+  grid-template-columns: 1fr 3fr;
+}
+.column {
+  flex: 1; /* Distribute space equally */
+  padding: 20px;
+  border: 1px solid #ccc; /* Optional: For visualization */
+  place-items: center;
+}

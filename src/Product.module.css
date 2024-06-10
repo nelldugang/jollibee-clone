@@ -1,0 +1,28 @@
+.itemGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-content: baseline;
+  gap: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+}
+
+li {
+  list-style-type: none !important;
+}
+
+.column label > input {
+  /* HIDE RADIO */
+  display: none;
+}
+.column label > input + img {
+  /* IMAGE STYLES */
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.column label > input:checked + img {
+  /* (CHECKED) IMAGE STYLES */
+  border: 2px solid #f00;
+}

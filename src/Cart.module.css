@@ -1,0 +1,8 @@
+.cart {
+  flex: 1; /* Distribute space equally */
+  padding: 20px;
+  /*border: 1px solid #ccc;  Optional: For visualization */
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

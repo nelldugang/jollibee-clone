@@ -1,0 +1,104 @@
+{
+  "products": {
+    "foods": [
+      {
+        "foodName": "1 - pc. Chickenjoy w/ Regular fries & Half Jolly Spaghetti Super Meal",
+        "price": 300,
+        "img": "./chickspagfriesrice.png",
+        "type": "Super Meals",
+        "drink": "Yes",
+        "id": 73930385
+      },
+      {
+        "foodName": "1 - pc. Chickenjoy w/ Burger Streak & Half Jolly Spaghetti Super Meal",
+        "price": 200,
+        "img": "./chickspagsteakrice.png",
+        "type": "Super Meals",
+        "drink": "Yes",
+        "id": 17806751
+      },
+      {
+        "foodName": "Yumburger, Half Jolly Spaghetti & Reg. Fries Super Meal",
+        "price": 300,
+        "img": "./spagburgfries.png",
+        "type": "Super Meals",
+        "drink": "Yes",
+        "id": 17806752
+      },
+      {
+        "foodName": "Crunchy Chicken Sandwich",
+        "price": 300,
+        "img": "./chickensandalacarte.png",
+        "type": "Chicken Sandwich",
+        "drink": "No",
+        "id": 73930383
+      },
+      {
+        "foodName": "Crunchy Chicken Sandwich w/ Drink",
+        "price": 200,
+        "img": "./chickensandwithdrink.png",
+        "type": "Chicken Sandwich",
+        "drink": "Yes",
+        "id": 17806754
+      },
+      {
+        "foodName": "Crunchy Chicken Sandwich w/ Fries and Drink",
+        "price": 300,
+        "img": "./chickensandwithdrinkfries.png",
+        "type": "Chicken Sandwich",
+        "drink": "Yes",
+        "id": 17806755
+      },
+      {
+        "foodName": "Chicken Sandwich Supreme",
+        "price": 300,
+        "img": "./chickensandsupreme.png",
+        "type": "Chicken Sandwich",
+        "drink": "No",
+        "id": 17806756
+      },
+      {
+        "foodName": "Chicken Sandwich Supreme w/ Fries and Drink",
+        "price": 300,
+        "img": "./chickensandsupremewithdrinkfries.png",
+        "type": "Chicken Sandwich",
+        "drink": "Yes",
+        "id": 17806757
+      }
+    ],
+    "drinks": [
+      {
+        "drinkName": "coke",
+        "drinkImg": "./coke.png",
+        "id": 1
+      },
+      {
+        "drinkName": "royal",
+        "drinkImg": "./royal.png",
+        "id": 2
+      },
+      {
+        "drinkName": "sprite",
+        "drinkImg": "./sprite.png",
+        "id": 3
+      }
+    ],
+    "addOns": [
+      {
+        "addOnsName": "fries",
+        "addOnsImg": "./fries.png",
+        "id": 4
+      },
+      {
+        "addOnsName": "ice cream",
+        "addOnsImg": "./icecream.png",
+        "id": 5
+      },
+      {
+        "addOnsName": "soup",
+        "addOnsImg": "./soup.png",
+        "id": 6
+      }
+    ]
+  }
+}
