@@ -1,6 +1,5 @@
 .filter {
-  width: 90%;
-  max-width: 400px;
+  max-width: 100%;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer;
   background-color: #fff;
@@ -29,7 +28,6 @@
 }
 
 .cardHeader {
-  margin-top: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +35,6 @@
     font-weight: 600;
     font-size: 1.375rem;
     line-height: 1.25;
-    padding-right: 1rem;
     text-decoration: none;
     color: inherit;
     will-change: transform;

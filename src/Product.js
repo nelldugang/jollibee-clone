@@ -11,20 +11,24 @@ function Product({
   products,
 }) {
   return (
-    <div className={styles.itemGrid}>
+    <div>
       {selectedProduct ? (
-        <MainProduct
-          selectedProduct={selectedProduct}
-          products={products}
-          addToCart={addToCart}
-          goBackToFilter={goBackToFilter}
-        />
+        <div className={styles.itemGridMain}>
+          <MainProduct
+            selectedProduct={selectedProduct}
+            products={products}
+            addToCart={addToCart}
+            goBackToFilter={goBackToFilter}
+          />
+        </div>
       ) : (
-        productList.map((item, index) => (
-          <div key={`${item.id}-${index}`}>
-            <ProductItem item={item} handleSelection={handleSelection} />
-          </div>
-        ))
+        <div className={styles.itemGrid}>
+          {productList.map((item, index) => (
+            <div key={`${item.id}-${index}`}>
+              <ProductItem item={item} handleSelection={handleSelection} />
+            </div>
+          ))}
+        </div>
       )}
     </div>
   );

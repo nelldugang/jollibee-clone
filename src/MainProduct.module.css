@@ -1,4 +1,106 @@
 .mainProduct {
-  /* display: grid; */
-  grid-template-columns: 2fr 1fr;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+}
+
+.nameStyle {
+  font-weight: bold;
+}
+
+.drinks,
+.addOns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.drinks img,
+.addOns img {
+  height: 10rem;
+}
+
+/* .labelGroup input {
+  opacity: 0;
+} */
+
+.labelGroup {
+  display: grid;
+  text-align: center;
+  cursor: pointer;
+}
+
+.labelGroup img {
+  margin: auto;
+}
+
+.labelGroup span {
+  font-weight: 500;
+}
+
+/* .labelGroup:hover {
+  filter: brightness(1.1);
+} */
+
+.labelGroup:hover {
+  animation: float 1s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-5px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.btnAddToCart {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+/* 16 */
+.btnAddToCart {
+  background-image: linear-gradient(
+    to right,
+    #eb3941,
+    #f15e64,
+    #e14e53,
+    #e2373f
+  );
+  box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+}
+
+.btnBack {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: grey;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }

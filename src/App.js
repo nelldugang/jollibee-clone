@@ -72,8 +72,7 @@ function App() {
         products={products}
       />
       <Cart cart={cart} removeFromCart={removeFromCart} />
-      <SwitchHighlightComponent />
-      test
+      {/* <SwitchHighlightComponent /> */}
     </div>
   );
 }

@@ -1,0 +1,21 @@
+{
+  "products": {
+    "foods": [
+      {
+        "foodName": "test",
+        "drink": "Coke",
+        "id": 73930385
+      },
+      {
+        "foodName": "test2",
+        "drink": "Royal",
+        "id": 17806751
+      },
+      {
+        "foodName": "test3",
+        "drink": "Sprite",
+        "id": 17806752
+      }
+    ]
+  }
+}
