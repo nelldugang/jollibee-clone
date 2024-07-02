@@ -3,7 +3,7 @@
     "foods": [
       {
         "foodName": "1 - pc. Chickenjoy w/ Regular fries & Half Jolly Spaghetti Super Meal",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer a fermentum purus. Maecenas aliquam est et mauris venenatis, vel feugiat turpis sagittis. Pellentesque fermentum fermentum mi. Nam a tortor auctor nulla gravida pretium at ac purus. Aenean consequat imperdiet odio sit amet pretium. Morbi ipsum odio, ornare eu venenatis a, rhoncus ut velit. Nullam a fringilla ligula.",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer a fermentum purus. Maecenas aliquam est et mauris venenatis, vel feugiat turpis sagittis.",
         "price": 100,
         "img": "./chickspagfriesrice.png",
         "type": "Super Meals",
@@ -12,7 +12,7 @@
       },
       {
         "foodName": "1 - pc. Chickenjoy w/ Burger Streak & Half Jolly Spaghetti Super Meal",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer a fermentum purus. Maecenas aliquam est et mauris venenatis, vel feugiat turpis sagittis. Pellentesque fermentum fermentum mi. Nam a tortor auctor nulla gravida pretium at ac purus. Aenean consequat imperdiet odio sit amet pretium. Morbi ipsum odio, ornare eu venenatis a, rhoncus ut velit. Nullam a fringilla ligula.",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer a fermentum purus. Maecenas aliquam est et mauris venenatis, vel feugiat turpis sagittis.",
         "price": 200,
         "img": "./chickspagsteakrice.png",
         "type": "Super Meals",
@@ -21,7 +21,7 @@
       },
       {
         "foodName": "Yumburger, Half Jolly Spaghetti & Reg. Fries Super Meal",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer a fermentum purus. Maecenas aliquam est et mauris venenatis, vel feugiat turpis sagittis. Pellentesque fermentum fermentum mi. Nam a tortor auctor nulla gravida pretium at ac purus. Aenean consequat imperdiet odio sit amet pretium. Morbi ipsum odio, ornare eu venenatis a, rhoncus ut velit. Nullam a fringilla ligula.",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer a fermentum purus. Maecenas aliquam est et mauris venenatis, vel feugiat turpis sagittis.",
         "price": 300,
         "img": "./spagburgfries.png",
         "type": "Super Meals",
@@ -30,7 +30,7 @@
       },
       {
         "foodName": "Crunchy Chicken Sandwich",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer a fermentum purus. Maecenas aliquam est et mauris venenatis, vel feugiat turpis sagittis. Pellentesque fermentum fermentum mi. Nam a tortor auctor nulla gravida pretium at ac purus. Aenean consequat imperdiet odio sit amet pretium. Morbi ipsum odio, ornare eu venenatis a, rhoncus ut velit. Nullam a fringilla ligula.",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer a fermentum purus. Maecenas aliquam est et mauris venenatis, vel feugiat turpis sagittis.",
         "price": 400,
         "img": "./chickensandalacarte.png",
         "type": "Chicken Sandwich",
@@ -39,7 +39,7 @@
       },
       {
         "foodName": "Crunchy Chicken Sandwich w/ Drink",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer a fermentum purus. Maecenas aliquam est et mauris venenatis, vel feugiat turpis sagittis. Pellentesque fermentum fermentum mi. Nam a tortor auctor nulla gravida pretium at ac purus. Aenean consequat imperdiet odio sit amet pretium. Morbi ipsum odio, ornare eu venenatis a, rhoncus ut velit. Nullam a fringilla ligula.",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer a fermentum purus. Maecenas aliquam est et mauris venenatis, vel feugiat turpis sagittis.",
         "price": 200,
         "img": "./chickensandwithdrink.png",
         "type": "Chicken Sandwich",
@@ -48,7 +48,7 @@
       },
       {
         "foodName": "Crunchy Chicken Sandwich w/ Fries and Drink",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer a fermentum purus. Maecenas aliquam est et mauris venenatis, vel feugiat turpis sagittis. Pellentesque fermentum fermentum mi. Nam a tortor auctor nulla gravida pretium at ac purus. Aenean consequat imperdiet odio sit amet pretium. Morbi ipsum odio, ornare eu venenatis a, rhoncus ut velit. Nullam a fringilla ligula.",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer a fermentum purus. Maecenas aliquam est et mauris venenatis, vel feugiat turpis sagittis.",
         "price": 100,
         "img": "./chickensandwithdrinkfries.png",
         "type": "Chicken Sandwich",
@@ -57,7 +57,7 @@
       },
       {
         "foodName": "Chicken Sandwich Supreme",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer a fermentum purus. Maecenas aliquam est et mauris venenatis, vel feugiat turpis sagittis. Pellentesque fermentum fermentum mi. Nam a tortor auctor nulla gravida pretium at ac purus. Aenean consequat imperdiet odio sit amet pretium. Morbi ipsum odio, ornare eu venenatis a, rhoncus ut velit. Nullam a fringilla ligula.",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer a fermentum purus. Maecenas aliquam est et mauris venenatis, vel feugiat turpis sagittis.",
         "price": 100,
         "img": "./chickensandsupreme.png",
         "type": "Chicken Sandwich",
@@ -66,7 +66,7 @@
       },
       {
         "foodName": "Chicken Sandwich Supreme w/ Fries and Drink",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer a fermentum purus. Maecenas aliquam est et mauris venenatis, vel feugiat turpis sagittis. Pellentesque fermentum fermentum mi. Nam a tortor auctor nulla gravida pretium at ac purus. Aenean consequat imperdiet odio sit amet pretium. Morbi ipsum odio, ornare eu venenatis a, rhoncus ut velit. Nullam a fringilla ligula.",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer a fermentum purus. Maecenas aliquam est et mauris venenatis, vel feugiat turpis sagittis.",
         "price": 200,
         "img": "./chickensandsupremewithdrinkfries.png",
         "type": "Chicken Sandwich",
