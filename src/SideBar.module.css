@@ -1,9 +1,12 @@
 .sidebar {
-  flex: 0 0 250px; /* Distribute space equally */
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-column: span 2;
   padding: 20px;
   /*border: 1px solid #ccc;  Optional: For visualization */
   border-radius: 10px;
   background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   text-align: center;
+  gap: 10px;
 }

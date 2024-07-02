@@ -38,22 +38,22 @@ function Cart({ cart, removeFromCart }) {
               ) : (
                 ""
               )} */}
-              <ul>
+              <div>
                 {item.totalAddons.map((adds, index2) => (
-                  <li key={index2}>
-                    {adds.value}
-                    {adds.img}
-                    {adds.price}
-                  </li>
+                  <div key={index2}>
+                    {/* {adds.value} */}
+                    <img src={adds.img} alt={adds.value} width="100" />
+                    <p>PHP {adds.price}</p>
+                  </div>
                 ))}
-              </ul>
+              </div>
               <p>${item.totalPrice}</p>
               <button onClick={() => removeFromCart(item)}>Remove</button>
             </li>
           ))}
         </ul>
       )}
-      <p>Total Price: ${calculateTotalPrice()}</p>
+      <p>Total: PHP {calculateTotalPrice()}</p>
       <p>cart Items: {cart.length}</p>
     </div>
   );

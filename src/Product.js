@@ -11,7 +11,7 @@ function Product({
   products,
 }) {
   return (
-    <div>
+    <>
       {selectedProduct ? (
         <div className={styles.itemGridMain}>
           <MainProduct
@@ -30,7 +30,7 @@ function Product({
           ))}
         </div>
       )}
-    </div>
+    </>
   );
 }
 

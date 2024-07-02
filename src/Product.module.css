@@ -3,6 +3,7 @@
   grid-template-columns: 2fr;
   background-color: white;
   padding: 50px;
+  overflow-y: auto;
 }
 
 .itemGrid {
@@ -14,6 +15,7 @@
   background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 20px;
+  overflow-y: auto;
 }
 
 li {
@@ -32,4 +34,17 @@ li {
 .column label > input:checked + img {
   /* (CHECKED) IMAGE STYLES */
   border: 2px solid #f00;
+}
+
+.itemGridMain::-webkit-scrollbar,
+.itemGrid::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.itemGridMain::-webkit-scrollbar-thumb,
+.itemGrid::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #d62929;
 }

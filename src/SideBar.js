@@ -9,20 +9,18 @@ function SideBar({ products, filterItems, productList, borders }) {
   });
 
   return (
-    <div className={styles.sidebar}>
-      <aside>
-        {types.map((product, index) => (
-          <Filter
-            key={product.id}
-            product={product}
-            filterItems={filterItems}
-            productList={productList}
-            index={index}
-            borders={borders}
-          />
-        ))}
-      </aside>
-    </div>
+    <aside className={styles.sidebar}>
+      {types.map((product, index) => (
+        <Filter
+          key={product.id}
+          product={product}
+          filterItems={filterItems}
+          productList={productList}
+          index={index}
+          borders={borders}
+        />
+      ))}
+    </aside>
   );
 }
 

@@ -2,14 +2,13 @@
   display: grid;
   gap: 20px; /* Optional: Adds space between columns */
   width: min(95%, 1440px);
-  margin: auto;
-  height: 100vh;
+  margin: 20px auto;
+  height: calc(100vh - 40px);
   gap: 1.5rem;
-  margin-top: 20px;
-  grid-template-columns: 0.75fr 3.5fr 0.75fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.25fr;
 }
 .column {
-  flex: 1; /* Distribute space equally */
   padding: 20px;
   border: 1px solid #ccc; /* Optional: For visualization */
   place-items: center;

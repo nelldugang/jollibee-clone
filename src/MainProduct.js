@@ -39,6 +39,7 @@ export default function MainProduct({
       foodName: selectedProduct.foodName,
       img: selectedProduct.img,
       drinks: drinks.val,
+      pricePerCart: totals,
       totalPrice: addtoPrice,
       totalAddons: addOns,
       drinkImg: drinks.img,
