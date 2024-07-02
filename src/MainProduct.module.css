@@ -29,9 +29,9 @@
   height: 10rem;
 } */
 
-/* .labelGroup input {
+.labelGroup input {
   opacity: 0;
-} */
+}
 
 .labelGroup {
   display: grid;
@@ -54,11 +54,11 @@
 
 .labelGroup:hover {
   animation: float 1s ease-in-out infinite;
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle,
     rgba(247, 0, 0, 1) 1%,
     rgba(237, 45, 22, 0) 56%
-  );
+  );*/
   border-radius: 50px;
 }
 

@@ -9,6 +9,43 @@ export default function MainProduct({
 }) {
   const [drinks, setDrinks] = useState({});
   const [addOns, setAddons] = useState([]);
+  const [highlightedIndex, setHighlightedIndex] = useState(null);
+  const [highlightedIndex2, setHighlightedIndex2] = useState([]);
+
+  const handleHighlight = (index) => {
+    setHighlightedIndex(index);
+  };
+
+  const highlighted = {
+    backgroundColor: "#ffd6d6",
+    // borderRadius: "40px",
+    background:
+      "radial-gradient(circle, rgba(247,0,0,1) 1%, rgba(237,45,22,0) 56%)",
+  };
+
+  const noHighlight = {
+    backgroundColor: "none",
+  };
+
+  const highlightedLight2 = (index) => {
+    // Check if the index is already in the highlightedIndices array
+    const indexInHighlighted = highlightedIndex2.indexOf(index);
+
+    if (indexInHighlighted === -1) {
+      // If index is not already highlighted, add it to the array
+      setHighlightedIndex2([...highlightedIndex2, index]);
+    } else {
+      // If index is already highlighted, remove it from the array
+      const newHighlightedIndices = [...highlightedIndex2];
+      newHighlightedIndices.splice(indexInHighlighted, 1);
+      setHighlightedIndex2(newHighlightedIndices);
+    }
+  };
+
+  const handleCheckboxChangeAndToggle = (event, index) => {
+    handleCheckboxChange(event);
+    highlightedLight2(index);
+  };
 
   const handleCheckboxChange = (event) => {
     const { value, checked, dataset } = event.target;
@@ -32,7 +69,7 @@ export default function MainProduct({
 
     const id = crypto.randomUUID();
     const addtoPrice = addOns
-      ? selectedProduct.price + totals.totalValue
+      ? selectedProduct.price + (totals.totalValue ? totals.totalValue : 0)
       : selectedProduct.price;
     const cart = {
       id,
@@ -45,7 +82,6 @@ export default function MainProduct({
       totalAddons: addOns,
       drinkImg: drinks.img,
     };
-
     addToCart(cart);
     goBackToFilter();
   };
@@ -70,7 +106,11 @@ export default function MainProduct({
         {products.drinks?.map(
           (drink, index) =>
             selectedProduct.drink === "Yes" && (
-              <label className={styles.labelGroup} key={index}>
+              <label
+                className={styles.labelGroup}
+                key={index}
+                style={highlightedIndex === index ? highlighted : noHighlight}
+              >
                 <img
                   src={process.env.PUBLIC_URL + drink.drinkImg}
                   alt={selectedProduct.name}
@@ -80,7 +120,11 @@ export default function MainProduct({
                   type="radio"
                   value={drink.drinkName}
                   onChange={(e) =>
-                    setDrinks({ val: e.target.value, img: drink.drinkImg })
+                    setDrinks({
+                      val: e.target.value,
+                      img: drink.drinkImg,
+                      handleHighlight: handleHighlight(index),
+                    })
                   }
                 />
                 <span>{drink.drinkName}</span>
@@ -90,7 +134,13 @@ export default function MainProduct({
       </div>
       <div className={styles.addOns}>
         {products.addOns?.map((addon, index) => (
-          <label className={styles.labelGroup} key={index}>
+          <label
+            className={styles.labelGroup}
+            key={index}
+            style={
+              highlightedIndex2.includes(index) ? highlighted : noHighlight
+            }
+          >
             <img
               src={process.env.PUBLIC_URL + addon.addOnsImg}
               alt={selectedProduct.name}
@@ -101,7 +151,7 @@ export default function MainProduct({
               data-img={addon.addOnsImg}
               data-price={addon.price}
               value={addon.addOnsName}
-              onChange={handleCheckboxChange}
+              onChange={(e) => handleCheckboxChangeAndToggle(e, index)}
             />
             <span>{addon.addOnsName}</span>
           </label>

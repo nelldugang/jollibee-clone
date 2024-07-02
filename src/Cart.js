@@ -28,7 +28,7 @@ function Cart({ cart, removeFromCart }) {
               <td>
                 <p>Your cart is empty </p>
                 {/* <p>Total: PHP {calculateTotalPrice()}</p> */}
-                <p>cart Items: {cart.length}</p>
+                {/* <p>cart Items: {cart.length}</p> */}
               </td>
             </tr>
           </tbody>
@@ -56,7 +56,7 @@ function Cart({ cart, removeFromCart }) {
                 <td className={styles.drinksAddons}>
                   <div>
                     {!item.drinks ? (
-                      "No Drinks"
+                      <p className={styles.nodrinks}>No Drinks</p>
                     ) : (
                       <>
                         <img

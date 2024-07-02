@@ -52,6 +52,10 @@
   border-bottom: 2px solid lightgrey !important;
 }
 
+.nodrinks {
+  padding-left: 20px;
+}
+
 .cart button {
   background: none;
   color: inherit;
