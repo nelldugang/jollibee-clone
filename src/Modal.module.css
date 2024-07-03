@@ -1,0 +1,49 @@
+/* Modal.css */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%;
+  max-width: 100%;
+  text-align: center !important;
+}
+
+.modalHeader,
+.modalFooter {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modalHeader {
+  font-size: 3rem;
+}
+
+.modalTitle {
+  margin: 0;
+}
+
+.button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #0056b3;
+}

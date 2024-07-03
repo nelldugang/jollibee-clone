@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Cart.module.css";
 
-function Cart({ cart, removeFromCart }) {
+function Cart({ cart, removeFromCart, openModal }) {
   const calculateTotalPrice = () => {
     return cart.reduce((total, item) => total + item.totalPrice, 0);
   };
@@ -98,6 +98,11 @@ function Cart({ cart, removeFromCart }) {
                   <b>PHP {calculateTotalPrice()}</b>
                 </p>
                 {/* <p>cart Items: {cart.length}</p> */}
+              </td>
+            </tr>
+            <tr>
+              <td className={styles.placeOrderButtonContainer} colSpan="4">
+                <button onClick={openModal}>Place Order</button>
               </td>
             </tr>
           </tbody>

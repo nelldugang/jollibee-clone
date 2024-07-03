@@ -4,8 +4,12 @@ import SideBar from "./SideBar";
 import styles from "./App.module.css";
 import { useEffect, useState } from "react";
 import Cart from "./Cart";
+import Modal from "./Modal";
 
-const BASE_URL = "http://localhost:9000";
+// running local json data server
+// const BASE_URL = "http://localhost:9000";
+// git hub live server
+const BASE_URL2 = "https://nelldugang.github.io/data-jollibee/products.json";
 
 function App() {
   const [products, setProduct] = useState([]);
@@ -13,14 +17,29 @@ function App() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [cart, setCart] = useState([]);
   const [borders, setBorder] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    setCart([]);
+  };
+
+  //fetch jollibee data
   useEffect(function () {
     async function fetchProduct() {
       try {
-        const res = await fetch(`${BASE_URL}/products`);
-        const data = await res.json();
-        setProduct(data);
+        // const res = await fetch(`${BASE_URL}/products`);
+        const res2 = await fetch(`${BASE_URL2}`);
+        // const data = await res.json();
+        const data2 = await res2.json();
+        // console.log(data);
+        setProduct(data2.products);
         setProductList(
-          data.foods?.filter((item) => item["type"] === "Super Meals")
+          data2.products.foods?.filter((item) => item["type"] === "Super Meals")
         );
       } catch {
         alert("There was an error loading data...");
@@ -29,6 +48,7 @@ function App() {
     fetchProduct();
   }, []);
 
+  // show result 1 of each type of foodtype
   const filterItems = (foodType, id) => {
     const result = products.foods?.filter((item) => item["type"] === foodType);
     setProductList(result);
@@ -47,10 +67,12 @@ function App() {
     );
   };
 
+  // manage all cart items
   function addToCart(product) {
     setCart([...cart, product]);
   }
 
+  // remove the selected index out of the cart
   const removeFromCart = (product) => {
     setCart(cart.filter((item) => item.id !== product.id));
   };
@@ -71,42 +93,16 @@ function App() {
         goBackToFilter={goBackToFilter}
         products={products}
       />
-      <Cart cart={cart} removeFromCart={removeFromCart} />
-      {/* <SwitchHighlightComponent /> */}
+      <Cart cart={cart} removeFromCart={removeFromCart} openModal={openModal} />
+      <Modal
+        show={showModal}
+        onClose={closeModal}
+        removeFromCart={removeFromCart}
+      >
+        <p>Please proceed to the cashier and show the order number</p>
+      </Modal>
     </div>
   );
 }
-
-const SwitchHighlightComponent = () => {
-  // Step 2: Initialize state with the index of the highlighted element
-  const [highlightedIndex, setHighlightedIndex] = useState(null); // Initially, no element is highlighted
-
-  // Step 3: Create a function to switch the highlight to the clicked element
-  const handleHighlight = (index) => {
-    setHighlightedIndex(index);
-  };
-
-  const elements = ["Element 1", "Element 2", "Element 3"]; // Array of elements
-
-  return (
-    <div>
-      {elements.map((element, index) => (
-        <div
-          key={index}
-          onClick={() => handleHighlight(index)}
-          style={{
-            backgroundColor: highlightedIndex === index ? "yellow" : "white",
-            padding: "20px",
-            margin: "10px",
-            cursor: "pointer",
-            border: "1px solid black",
-          }}
-        >
-          {element}
-        </div>
-      ))}
-    </div>
-  );
-};
 
 export default App;
