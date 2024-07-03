@@ -13,8 +13,10 @@ const Modal = ({ show, onClose, children }) => {
         </div>
         <div className={styles.modalBody}>{children}</div>
         <div className={styles.modalFooter}>
-          <button onClick={onClose} className="button">
-            Close
+          <button onClick={onClose} className={styles.button}>
+            <p>
+              <b>CloseTAE</b>
+            </p>
           </button>
         </div>
       </div>
