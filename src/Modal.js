@@ -15,7 +15,7 @@ const Modal = ({ show, onClose, children }) => {
         <div className={styles.modalFooter}>
           <button onClick={onClose} className={styles.button}>
             <p>
-              <b>CloseTAE</b>
+              <b>Close</b>
             </p>
           </button>
         </div>
