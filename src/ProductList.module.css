@@ -2,7 +2,7 @@
 
 .item {
   place-items: center;
-  gap: auto;
+  gap: 20px;
   display: grid;
   /* text-align: center; */
   cursor: pointer;
@@ -65,4 +65,5 @@
 
 .itemGrid .info {
   grid-column: 2;
+  place-content: center !important;
 }

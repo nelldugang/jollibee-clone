@@ -1,6 +1,7 @@
 import styles from "./Product.module.css";
 import ProducList from "./ProductList";
 import MainProduct from "./MainProduct";
+import React from "react";
 
 function Product({
   productList,
@@ -24,9 +25,9 @@ function Product({
       ) : (
         <div className={styles.itemGrid}>
           {productList.map((item, index) => (
-            <div key={`${item.id}-${index}`}>
+            <React.Fragment key={`${item.id}-${index}`}>
               <ProducList item={item} handleSelection={handleSelection} />
-            </div>
+            </React.Fragment>
           ))}
         </div>
       )}
