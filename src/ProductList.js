@@ -1,6 +1,6 @@
 import styles from "./ProductList.module.css";
 
-export default function ProducItem({ item, handleSelection }) {
+export default function ProducList({ item, handleSelection }) {
   return (
     <div className={styles.item} onClick={() => handleSelection(item)}>
       <img

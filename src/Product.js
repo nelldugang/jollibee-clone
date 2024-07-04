@@ -1,5 +1,5 @@
 import styles from "./Product.module.css";
-import ProductItem from "./ProductList";
+import ProducList from "./ProductList";
 import MainProduct from "./MainProduct";
 
 function Product({
@@ -25,7 +25,7 @@ function Product({
         <div className={styles.itemGrid}>
           {productList.map((item, index) => (
             <div key={`${item.id}-${index}`}>
-              <ProductItem item={item} handleSelection={handleSelection} />
+              <ProducList item={item} handleSelection={handleSelection} />
             </div>
           ))}
         </div>

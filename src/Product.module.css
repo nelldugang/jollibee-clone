@@ -18,6 +18,10 @@
   overflow-y: auto;
 }
 
+.itemGrid div {
+  height: 90%;
+}
+
 li {
   list-style-type: none !important;
 }
@@ -54,10 +58,9 @@ li {
   .itemGrid {
     grid-column: span 2 !important;
   }
-}
-
-/* Responsive settings */
-@media (max-width: 600px) {
+  .itemGrid div {
+    height: none !important;
+  }
   .itemGridMain {
     grid-column: span 2 !important;
     padding: 25px !important;

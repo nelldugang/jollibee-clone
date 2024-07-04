@@ -45,7 +45,8 @@ function App() {
         // console.log(data);
         setProduct(data2.products);
         setProductList(
-          data2.products.foods?.filter((item) => item["type"] === "Super Meals")
+          // data2.products.foods?.filter((item) => item["type"] === "Super Meals")
+          data2.products.foods
         );
       } catch {
         alert("There was an error loading data...");
