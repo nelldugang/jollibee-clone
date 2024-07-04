@@ -18,9 +18,15 @@ function App() {
   const [cart, setCart] = useState([]);
   const [borders, setBorder] = useState(null);
   const [showModal, setShowModal] = useState(false);
+  const [orderCounter, setorderCounter] = useState(0);
 
   const openModal = () => {
     setShowModal(true);
+    setorderCounter((prev) => prev + 1);
+  };
+
+  const formatCount = (orderCounter) => {
+    return orderCounter.toString().padStart(5, "0");
   };
 
   const closeModal = () => {
@@ -98,6 +104,8 @@ function App() {
         show={showModal}
         onClose={closeModal}
         removeFromCart={removeFromCart}
+        orderCounter={orderCounter}
+        formatCount={formatCount}
       >
         <p>Please proceed to the cashier and show the order number</p>
       </Modal>

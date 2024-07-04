@@ -13,3 +13,10 @@
   border: 1px solid #ccc; /* Optional: For visualization */
   place-items: center;
 }
+
+/* Responsive settings */
+@media (max-width: 600px) {
+  .container {
+    grid-template-rows: 1fr 2fr 1fr !important;
+  }
+}

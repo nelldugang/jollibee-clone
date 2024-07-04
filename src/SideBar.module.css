@@ -10,3 +10,11 @@
   text-align: center;
   gap: 10px;
 }
+
+/* Responsive settings */
+@media (max-width: 600px) {
+  .sidebar {
+    overflow-x: auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

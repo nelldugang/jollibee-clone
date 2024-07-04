@@ -20,7 +20,7 @@
 .filter img {
   border-radius: 10px;
   overflow: hidden;
-  width: 50%;
+  width: 100%;
 }
 
 .filter p {
@@ -31,21 +31,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  p {
-    font-weight: 600;
-    font-size: 1.375rem;
-    line-height: 1.25;
-    text-decoration: none;
-    color: inherit;
-    will-change: transform;
-    &:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-    }
+}
+
+.cardHeader p {
+  font-weight: 600;
+  font-size: 1.375rem;
+  line-height: 1.25;
+  text-decoration: none;
+  color: inherit;
+  will-change: transform;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+/* Responsive settings */
+@media (max-width: 600px) {
+  .cardHeader p {
+    font-size: 0.8rem !important;
+  }
+  .filter img {
+    width: 100px !important;
   }
 }
 

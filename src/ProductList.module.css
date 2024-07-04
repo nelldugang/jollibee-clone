@@ -21,6 +21,21 @@
   }
 }
 
+/* Responsive settings */
+@media (max-width: 600px) {
+  .item {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+  .item h4 {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .item p {
+    margin: 0;
+  }
+}
+
 .item::-webkit-scrollbar {
   width: 12px;
   background-color: #f5f5f5;

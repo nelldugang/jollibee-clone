@@ -48,3 +48,18 @@ li {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #d62929;
 }
+
+/* Responsive settings */
+@media (max-width: 600px) {
+  .itemGrid {
+    grid-column: span 2 !important;
+  }
+}
+
+/* Responsive settings */
+@media (max-width: 600px) {
+  .itemGridMain {
+    grid-column: span 2 !important;
+    padding: 25px !important;
+  }
+}
